@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/prof_info"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#CCD3D1"
+
+        android:layout_width="305dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="104dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/prof"
+        android:layout_width="116dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="40dp"
+        android:text="Профиль"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/weightloss"
+        android:layout_width="116dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="76dp"
+        android:text="План похудения:"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#CCD3D1"
+
+        android:layout_width="305dp"
+        android:layout_height="134dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="305dp"
+        android:layout_height="70dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#CCD3D1"
+
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prof_info" />
+
+    <TextView
+        android:id="@+id/progress"
+        android:layout_width="116dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="72dp"
+        android:text="Прогресс"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/change_button"
+        android:layout_width="78dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="4dp"
+        android:textSize="7dp"
+        android:text="Изменить"
+        app:layout_constraintBottom_toTopOf="@+id/prof_info"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="88dp"
+        android:layout_height="78dp"
+        app:layout_constraintStart_toStartOf="@+id/prof_info"
+        app:layout_constraintTop_toTopOf="@+id/prof_info"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="108dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/prof_info"
+        app:layout_constraintTop_toTopOf="@+id/prof_info" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="109dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="104dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/prof_info"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/goals"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/prof_info"
+        app:layout_constraintStart_toStartOf="@+id/prof_info" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Sum_calories"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Snack"
+        android:layout_width="388dp"
+        android:layout_height="61dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#CBD2D0"
+        android:text="Перекус"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Second_dinner"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Second_dinner"
+        android:layout_width="388dp"
+        android:layout_height="61dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#CBD2D0"
+        android:text="Ужин"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dinner"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/dinner"
+        android:layout_width="388dp"
+        android:layout_height="61dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#CBD2D0"
+        android:text="Обед"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breakfast"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+
+        android:id="@+id/total_window"
+        android:layout_width="374dp"
+        android:layout_height="220dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#CCD3D1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234" />
+
+    <TextView
+        android:id="@+id/Total_calories"
+        android:layout_width="189dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:background="#A0A3A1"
+        android:gravity="center"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/total_window"
+        app:layout_constraintEnd_toEndOf="@+id/total_window"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/total_window"
+        app:layout_constraintTop_toTopOf="@+id/total_window"
+        app:layout_constraintVertical_bias="0.209" />
+
+    <TextView
+        android:id="@+id/Burnt_calories"
+        android:layout_width="64dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="28dp"
+        android:text="Сожжено"
+        app:layout_constraintEnd_toEndOf="@+id/total_window"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="@+id/total_window"
+        app:layout_constraintTop_toTopOf="@+id/total_window" />
+
+    <TextView
+        android:id="@+id/total_carbohydrates"
+        android:layout_width="70dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Углеводы"
+        app:layout_constraintStart_toStartOf="@+id/total_window"
+        app:layout_constraintTop_toBottomOf="@+id/Total_calories" />
+
+    <TextView
+        android:id="@+id/total_proteins"
+        android:layout_width="70dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="20dp"
+        android:text="Белки"
+        app:layout_constraintEnd_toStartOf="@+id/total_fats"
+        app:layout_constraintStart_toEndOf="@+id/total_carbohydrates"
+        app:layout_constraintTop_toBottomOf="@+id/Total_calories" />
+
+    <TextView
+        android:id="@+id/total_fats"
+        android:layout_width="70dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:text="Жиры"
+        app:layout_constraintEnd_toEndOf="@+id/total_window"
+        app:layout_constraintTop_toBottomOf="@+id/Total_calories" />
+
+    <TextView
+
+        android:id="@+id/breakfast"
+        android:layout_width="388dp"
+        android:layout_height="61dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#CBD2D0"
+        android:text="Завтрак"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_window"
+        app:layout_constraintVertical_bias="0.188" />
+
+    <Button
+        android:id="@+id/button_breakfast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#000000"
+        android:text="Добавить"
+        app:layout_constraintEnd_toEndOf="@+id/breakfast"
+        app:layout_constraintTop_toTopOf="@+id/breakfast" />
+
+    <Button
+        android:id="@+id/button_dinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Добавить"
+        android:backgroundTint="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/dinner"
+        app:layout_constraintTop_toTopOf="@+id/dinner" />
+
+    <Button
+        android:id="@+id/button_second_dinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Добавить"
+        android:backgroundTint="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/Second_dinner"
+        app:layout_constraintTop_toTopOf="@+id/Second_dinner" />
+
+    <Button
+        android:id="@+id/button_snack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#000000"
+        android:text="Добавить"
+        app:layout_constraintEnd_toEndOf="@+id/Snack"
+        app:layout_constraintTop_toTopOf="@+id/Snack" />
+
+    <TextView
+        android:id="@+id/week_nb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="88dp"
+        android:text="Неделя 1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/prof_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="56dp"
+        android:text="Профиль"
+        app:layout_constraintBottom_toTopOf="@+id/total_window"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
