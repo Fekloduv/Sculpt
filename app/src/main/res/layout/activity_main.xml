@@ -71,6 +71,7 @@
         android:background="#A0A3A1"
         android:gravity="center"
         android:text="TextView"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="@+id/total_window"
         app:layout_constraintEnd_toEndOf="@+id/total_window"
         app:layout_constraintHorizontal_bias="0.502"
